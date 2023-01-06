@@ -6,8 +6,8 @@ import Search from './search'
 function layout({categories}) {
     const renderCategories = () => {
         return categories.data.map((c) => (
-            <li key={c.id}>
-                <Link to={`/categories/${c.id}`}>{c.title}</Link>
+            <li key={c.id} className="items">
+                <Link className="items" to={`/categories/${c.id}`}>{c.title}</Link>
             </li>
         ));
     };
@@ -18,7 +18,7 @@ function layout({categories}) {
             <Link to="/"><HomeIcon width={40}/></Link>
         </div>
         <Search/>
-        <div id="headerTile">youssef Store</div>
+        <div id="headerTile">Youssef Najjar Store</div>
         <div id="headerCartIcon">
             <Link to="/basket"><CartIcon width={40}/></Link>
         </div>
@@ -37,8 +37,8 @@ function layout({categories}) {
     </section>
 
     <footer>
-        <Link to="/">Go to Home Page</Link>
-        |<Link to="/basket">basket</Link>
+        <Link to="/" className='footerLinks'>Go to Home Page</Link>
+        |<Link to="/basket" className='footerLinks'>basket</Link>
     </footer>
 </>
   )

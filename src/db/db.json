@@ -1,7 +1,7 @@
 {
   "categories": [
     { "id": 1, "title": "Fridges" },
-    { "id": 2, "title": "Kettles" },
+    { "id": 2, "title": "Phones" },
     { "id": 3, "title": "Televisions" }
   ],
   "products": [
@@ -133,6 +133,64 @@
         "specs": {"dimensions": "TV with stand: 682 x 1069 x 300 mm (H x W x D) - TV: 622 x 1069 x 300 mm (H x W x D) - Boxed: 220 x 1408 x 745 mm (H x W x D)"},
         "features": ["Crystal display for long-lasting colour & sharp contrast", "Crystal Processor 4K for the best 4K picture & targeted sound", "Picture quality : 2000 PQI", "HDR : HDR10+ / Hybrid Log-Gamma (HLG)", "Catch-up TV & 4K streaming", "TV PLUS", "HDMI 2.1 x 2 / HDMI 2.0 x 2"],
         "stock": 16
+    },
+    {
+        "id": 11,
+        "catId": 2,
+        "title": "iPhone 12",
+        "productCode": "IP1234",
+        "image": "iphone12.jpeg",
+        "price": 2399,
+        "sku": "iphone12.jpeg",
+        "description": "The iPhone 12 is a sleek and powerful smartphone with the latest technology and features. It boasts a 6.1-inch Super Retina XDR display that provides crisp and clear visuals, as well as a ceramic shield front cover that helps to protect the phone from drops. The A14 Bionic chip with Neural Engine ensures fast and smooth performance, while the dual-camera system with 12 MP ultra-wide and wide lenses allows for stunning photos and videos. The iPhone 12 is also 5G capable, allowing for faster data speeds and more reliable connections. The phone runs on the iOS 14 operating system and features Face ID for secure unlocking.",
+        "specs":{"dimension": "5.78 x 2.82 x 0.29 inches"},
+        "features": [
+          "6.1-inch Super Retina XDR display",
+          "A14 Bionic chip with Neural Engine",
+          "Dual-camera system with 12 MP ultra-wide and wide lenses",
+          "5G capable",
+          "iOS 14 operating system",
+          "Face ID"
+        ],
+        "stock":5
+    },
+    { "id":12,
+      "catId":2,
+      "title": "Galaxy S21",
+      "productCode": "GS21",
+      "image": "samsungS21.jpg",
+      "price": 999,
+      "sku": "samsungS21.jpg",
+      "description": "The Galaxy S21 is a high-performance smartphone with a sleek design and powerful hardware. It features a 6.2-inch AMOLED 2X display that delivers vibrant and vivid visuals, as well as a metallic body that provides a premium feel. The Snapdragon 888 processor ensures fast and smooth performance, while the triple-camera system with 64 MP telephoto, ultra-wide, and wide lenses allows for versatile and high-quality photos and videos. The Galaxy S21 is also 5G capable, providing faster data speeds and more reliable connections. The phone runs on the Android 11 operating system and features a fingerprint sensor for secure unlocking.",
+      "specs":{"dimension": "5.97 x 2.72 x 0.31 inches"},
+      "features": [
+        "6.2-inch AMOLED 2X display",
+        "Snapdragon 888 processor",
+        "Triple-camera system with 64 MP telephoto, ultra-wide, and wide lenses",
+        "5G capable",
+        "Android 11 operating system",
+        "Fingerprint sensor"
+      ],
+      "stock":11
+    },
+    { "id":13,
+      "catId":2,
+      "title": "Pixel 4a",
+      "product_code": "PX4A",
+      "image": "pixel4a.jpeg",
+      "price": 349,
+      "sku": "pixel4a.jpeg",
+      "description": "The Pixel 4a is a budget-friendly smartphone with a compact design and powerful camera. It boasts a 5.8-inch Full HD OLED display that provides clear and crisp visuals, as well as a polycarbonate body that is lightweight and durable. The Snapdragon 730 processor ensures fast and smooth performance, while the 12.2 MP rear camera with Night Sight and HDR+ allows for stunning photos and videos even in low light conditions. The phone also has an 8 MP front camera for selfies and video calls. The Pixel 4a runs on the Android 11 operating system and features the Google Assistant for convenient voice control and assistance.",
+      "specs":{"dimension": "5.7 x 2.7 x 0.3 inches"},
+      "features": [
+        "5.8-inch Full HD OLED display",
+        "Snapdragon 730 processor",
+        "12.2 MP rear camera with Night Sight and HDR+",
+        "8 MP front camera",
+        "Android 11 operating system",
+        "Google Assistant"
+      ],
+      "stock":22
     }
   ]
 }

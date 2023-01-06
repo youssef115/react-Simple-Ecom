@@ -38,18 +38,18 @@ function CheckOut() {
   return (
     <form onSubmit={handleSubmit}>
     <CheckoutContainer>
-        {/* Row 1 */}
+       
         <CheckoutTitle>Shopping Checkout</CheckoutTitle>
 
-        {/* Row 4 */}
+       
         <CheckoutHeader>
             <h4>Your Details</h4>
         </CheckoutHeader>
 
-        {/* Row 5 */}
+        
         <CheckoutHeaderLine />
 
-        {/* Row 6 */}
+        
         <CheckoutTable>
             <CheckoutFormLabel>Name</CheckoutFormLabel>
             <CheckoutInput
@@ -69,29 +69,28 @@ function CheckOut() {
             />
         </CheckoutTable>
 
-        {/* Row 7 */}
+       
         <CheckoutHeader>
-            <h4>Address Details</h4>
+            <h4>More Details</h4>
         </CheckoutHeader>
 
-        {/* Row 8 */}
+        
         <CheckoutHeaderLine />
 
-        {/* Row 9 */}
+        
         <CheckoutTable>
-            <CheckoutFormLabel>Copy to shipping</CheckoutFormLabel>
-            <CheckoutFormCheckbox type="checkbox" />
+            
 
-            <CheckoutFormLabel>Billing Address</CheckoutFormLabel>
+            <CheckoutFormLabel>Phone Number</CheckoutFormLabel>
 
-            <CheckoutAddress>
+            <CheckoutPhoneNumber>
                 <input
                     type="text"
                     name="billingAddress1"
                 />
                 <input type="text" name="billingAddress2" />
                 <input type="text" name="billingCity" />
-            </CheckoutAddress>
+            </CheckoutPhoneNumber>
 
             <CheckoutFormLabel>Shipping Address</CheckoutFormLabel>
 
@@ -154,6 +153,14 @@ const CheckoutTitle = styled.h2`
 `;
 
 const CheckoutAddress = styled.div`
+    display: grid;
+
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+`;
+
+const CheckoutPhoneNumber = styled.div`
     display: grid;
 
     grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;

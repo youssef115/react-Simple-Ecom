@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { getProductById } from '../fetcher'
 import styled from "styled-components";
 
+
+
 import image3 from '../assets/10205751.jfif'
 import image2 from '../assets/10205942.jfif'
 import image4 from '../assets/10212871.jfif'
@@ -13,11 +15,14 @@ import image6 from '../assets/M10213562_001.jfif'
 import image10 from '../assets/M10213562_008.jfif'
 import image8 from '../assets/M10222398.jfif'
 import image9 from '../assets/M10226866.jfif'
+import image11 from '../assets/iphone12.jpeg'
+import image12 from '../assets/samsungS21.jpg'
+import image13 from "../assets/pixel4a.jpeg"
 
 
 
-function ProductDetails() {
-  const images=[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10]
+function ProductDetails(props) {
+  const images=[image1,image2,image3,image4,image5,image6,image7,image8,image9,image10,image11,image12,image13]
   const [product,setProducts]=useState({errorMessage:'',data:{}})
   const {productId}=useParams()
   useEffect(()=>{
@@ -75,7 +80,7 @@ function ProductDetails() {
             
         </ProductInfoStock>
         <ProductInfoAction>
-            <ProductInfoActionButton>Add to Basket</ProductInfoActionButton>
+            {/* <ProductInfoActionButton className='btn'>Add to Basket</ProductInfoActionButton> */}
         </ProductInfoAction>
 
     </aside>
@@ -158,18 +163,18 @@ const ProductInfoAction = styled.div`
     flex-direction: column;
 `;
 
-const ProductInfoActionButton = styled.button`
-    width: 160px;
-    height: 30px;
-    border-radius: 10px;
-    margin-top: 20px;
-    background-color: lightgray;
-    border: solid 1px slategrey;
-    font-weight: bold;
-`;
+// const ProductInfoActionButton = styled.button`
+//     width: 160px;
+//     height: 30px;
+//     border-radius: 10px;
+//     margin-top: 20px;
+//     background-color: lightgray;
+//     border: solid 1px slategrey;
+//     font-weight: bold;
+// `;
 
 const ProductInfoFinancePrice = styled.div`
-    color: darkslategray;
+    color: red;
     font-size: 2em;
     font-weight: bold;
     padding-top: 10px;

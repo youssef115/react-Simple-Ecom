@@ -51,7 +51,7 @@ function CategoryProduct({id,title,image,specs,features,price,stock}) {
            
               <ProductInfoActionButton className='btn' onClick={()=>navigate(`/products/${id}`)}>view Product</ProductInfoActionButton>
             
-            <ProductInfoActionButton onClick={()=>addProduct({id,title,price})}>Add to Basket</ProductInfoActionButton>
+            <ProductInfoActionButton className='btn' onClick={()=>addProduct({id,title,price})}>Add to Basket</ProductInfoActionButton>
         </ProductInfoAction>
 
     </aside>
@@ -139,7 +139,7 @@ const ProductInfoActionButton = styled.button`
 `;
 
 const ProductInfoFinancePrice = styled.div`
-    color:rgb(255, 80, 86);
+    color:red;
     font-size: 2em;
     font-weight: bold;
     padding-top: 10px;
